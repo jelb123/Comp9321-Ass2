@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/Ass2" docBase="Ass2" debug="1" reloadable="true" crossContext="true">
+
+   <Resource name="jdbc/auction" auth="Container"
+          type="javax.sql.DataSource" username="user" password="123"
+          driverClassName="org.apache.derby.jdbc.ClientDriver" 
+          url="jdbc:derby://localhost:1527/auction"
+          maxActive="200" maxIdle="10"/>
+    
+    <Resource auth="Container"
+		name="mail/Session"
+        type="javax.mail.Session"
+        mail.smtp.host="smtp.gmail.com"
+        mail.smtp.port="465"
+        mail.smtp.auth="true"
+        mail.smtp.user="comp9321.19@gmail.com"
+        mail.smtp.password="comp9321."
+        mail.smtp.starttls.enable="true"
+    />      
+          
+</Context>
+
